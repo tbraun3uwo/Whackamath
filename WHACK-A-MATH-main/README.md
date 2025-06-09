@@ -1,71 +1,84 @@
-Course project for Computer Science 2212. Worked with 4 other group memebers. I contributed to the main game loop, the level progression, the lives and score system, and the games visuals.
+## Overview
 
-WhackAMath is an educational math game aimed at improving the mental math capabilities of grade school children.
-How to Build From Source Code:
+WhackAMath is an educational math game aimed at improving the mental math capabilities of grade school children. Built as a course project for Computer Science 2212, the game was developed by a team of 5.  
+**My Contributions**:  
+- Main game loop  
+- Level progression  
+- Lives and score system  
+- Game visuals  
 
-	1. Download the external library from:  https://gluonhq.com/products/javafx/ 
-	2. Open the project in IntelliJIDEA on a windows computer
-	3. Go to File>Project Structure>Libraries
-	4. Click the plus sign and click Java
-	5. In the file explorer, go to the downloaded file, open it and select lib, import this file
-	6. If a prompt comes up telling you this will be added to the project, click OK
-	7. Select Apply and OK
-	8. If this does not add the library, repeat steps 4-7
-	9. Go to Run Configurations and click Edit Configurations
-	10. Click the plus sign to add a new configuration
-	11. Select Application
-	12. Title it anything
-	13. Select SignInMain as the main class
-	14. Add these lines in the VM options line, replacing <add your path here> with the path to your lib file:
+## Features
 
---module-path
-" <add your path here>"
---add-modules
-javafx.controls,javafx.fxml
+- **Level-Based Gameplay**: Progress through increasingly difficult math questions.
+- **Leaderboard**: Tracks and displays top scores.
+- **Debug Mode**: Start the game at any level.
+- **Instructor Mode**: View encrypted player stats.
+- **Visual Timer and Score System**: Enhances engagement and challenge.
 
-    •	Click Apply and OK
-	•	Build the project from this run configuration
-	•	Click Run
+## Requirements
 
+### Software
 
+- IntelliJ IDEA (Windows)
+- Java JDK 11+
+- JavaFX SDK (from [gluonhq.com](https://gluonhq.com/products/javafx/))
 
+## How to Build from Source
 
-How to run from already built code:
-	1	Open the zip file containing the project
-	2	From the files and directories listed, select “whackAmole.exe”
-	3	From there, the game will open, and you will be prompted to sign in and follow the instructions on how to play
-	the game further down in this document.
+1. Download JavaFX from [https://gluonhq.com/products/javafx/](https://gluonhq.com/products/javafx/)
+2. Open the project in IntelliJ IDEA (Windows)
+3. Go to `File > Project Structure > Libraries`
+4. Click `+` → `Java`
+5. Navigate to the downloaded JavaFX folder, select the `lib` directory, and import it
+6. Confirm the prompt to add to project
+7. Click `Apply` and `OK`  
+    *(Repeat steps 4–7 if necessary)*
+8. Go to `Run > Edit Configurations`
+9. Click `+` → `Application`
+10. Set any title and select `SignInMain` as the main class
+11. In VM options, add the following (replace `<add your path here>` with your actual path):
+``` --module-path "<add your path here>" --add-modules javafx.controls.javafx.fxml ``` 
+12. Click `Apply` and `OK`
+13. Build and run the project from this configuration
+## How to Run from Executable
 
+1. Open the ZIP file containing the project.
+2. Run `whackAmole.exe`.
+3. Sign in and follow on-screen instructions.
 
+## Software Modes
 
-Software Accounts and Passwords/How to access teacher mode:
-	•	DebugMode: To access debug mode, you are prompted with a sign-in screen that includes the correct password.
-	    Once the correct password is inputted, you are entered into debug mode, where you can start the game from
-	    any level you choose. From debug mode, we are able to include a custom mode into our very own educational game.
-	◦	Password: debug
-	•	InstructorMode: To enter instructor mode, you are prompted with a sign-in screen that includes the correct
-	    password. Once you input the correct password, you are sent into instructor mode, where you can start the game
-	    from any level you choose. From instructor mode, we are adding a system administrator to our very own
-	    educational game.
-	◦	Password: instructor
-	•	Instructions on how to play the game:
-	1	Pick a username and sign in
-		a To get help instructions on how to play the game select “help"
-	    b At any point when you are returned to the main menu or at the result screen, you can check the leaderboard
-	    for a ranked list of the highest scores
-	    c To get a list of encrypted detailed stats, select instructor mode and input the password.
-	    d To start the game from any level select debug mode and enter with the correct password.
-	2	Select Play Game
-	3   Once in the game, select the mole that has the correct answer number to the question prompt at the top of the
-	    screen.
-	    a To check questions left before the next level look at the bottom of the screen where it is indicated and
-	    your lives left are also listed in the top right corner of the screen.
-	    b On the top left side of the screen you are left with a timer which counts down for the number of seconds you
-	    have left to answer a question.
-	4	From here, keep playing until you reach the highest score at that level.
-	5	Once you have completed your progress at level 1, you will be brought to the result screen, where you must
-	select the next level to progress to the next iteration of the game.
-	6	You keep playing the game at the next level until you lose. The game continues until you run out of lives, and
-	your journey ends at that given level. At the end, you can also check your score in the leaderboard again or return
-	 to the main menu, where you are prompted with 6 options and another button that allows you to reset the game and
-	 start from scratch.
+### Debug Mode
+
+- **Password**: `debug`  
+- Start from any level.
+
+### Instructor Mode
+
+- **Password**: `instructor`  
+- View encrypted game stats and administer levels.
+
+## Gameplay Instructions
+
+1. **Sign In**
+- Pick a username.
+- Click “Help” for instructions.
+- Access leaderboard, Instructor Mode, or Debug Mode as needed.
+
+2. **Select “Play Game”**
+
+3. **During Gameplay**
+- Click the mole with the correct answer.
+- Timer: top-left
+- Lives: top-right
+- Remaining questions: bottom
+
+4. **Progression**
+- Complete each level to move on.
+- Select next level at result screen.
+
+5. **Game Over**
+- Game ends when lives run out.
+- View leaderboard or return to main menu.
+- Option to reset and start over.
+
